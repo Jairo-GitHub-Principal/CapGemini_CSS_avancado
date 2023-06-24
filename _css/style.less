@@ -1,4 +1,16 @@
+// variavel que recebe a cor azul para ser aplicada no h2
 @blue:blue;
+h2{color: @blue;}
 
-h1{color: @blue;}
-p{color: @blue;}
+// tag header criar as variaveis e atribuir valores, às mesmas
+@width: 500px;
+@height:300px;
+@corDefundo: grey; 
+
+// seleciona a tag e aplicar o valor das variaveis para as propriedades w,h,b
+.testLess{
+  width: @width;
+  height: @height;
+  background: @corDefundo;
+  color: black;
+}
